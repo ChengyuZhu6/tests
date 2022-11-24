@@ -1,0 +1,14 @@
+# Copyright (c) 2021, 2022 IBM Corporation
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busybox-cc
+spec:
+  runtimeClassName: $RUNTIMECLASS
+  containers:
+  - name: nginx
+    image: $IMAGE
+    imagePullPolicy: Always

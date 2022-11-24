@@ -1,0 +1,12 @@
+# Copyright (c) 2021, 2022 IBM Corporation
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+metadata:
+  #  name: ${crictl_sandbox_name}
+  name: kata-cc-busybox-sandbox
+  uid: ${UUIDGEN}
+  namespace: default
+dns_config:
+  servers:
+    - 8.8.8.8
